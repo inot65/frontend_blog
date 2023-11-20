@@ -1,0 +1,82 @@
+.contact {
+  padding-top: 20px;
+  display: flex;
+}
+
+.contactWrapper {
+  flex: 9;
+  padding: 20px;
+  align-self: auto;
+}
+
+.contactTitle {
+  text-align: center;
+  margin: 10px;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 28px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactGrupInput {
+  color: #333;
+  font-size: 18px;
+  line-height: 25px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  max-width: 50vw;
+}
+
+.contactGrupInput > label {
+  font-weight: 600;
+}
+
+.contactGrupInput > input {
+  outline: none;
+  margin-bottom: 10px;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid lightgray;
+}
+
+.contactInputTextarea {
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.contactButtonSubmit {
+  align-self: center;
+  width: 175px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: teal;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.contactButtonSubmit:hover {
+  background-color: rgb(1, 114, 114);
+}
+
+.contactError {
+  align-self: center;
+  color: red;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.contactSuccess {
+  align-self: center;
+  color: green;
+  font-weight: 600;
+  margin-top: 20px;
+}

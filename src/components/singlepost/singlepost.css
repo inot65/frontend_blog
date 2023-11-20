@@ -1,0 +1,150 @@
+.singlePost {
+  flex: 9;
+}
+
+.singlePostWrapper {
+  padding: 20px;
+  padding-right: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.singlePostImg {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.singlePostTitle {
+  text-align: center;
+  margin: 10px;
+  font-family: 'Lora', serif;
+  font-size: 28px;
+}
+
+.singlePostTitleInput {
+  margin: 10px;
+  font-family: 'Lora', serif;
+  font-size: 28px;
+  border: none;
+  border-bottom: 1px solid lightgrey;
+}
+
+.singlePostTitleInput:focus {
+  outline: none;
+}
+
+.singlePostEdit {
+  float: right;
+  font-size: 16px;
+}
+
+.singlePostIcon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.singlePostIcon:first-child {
+  color: teal;
+}
+
+.singlePostIcon:last-child {
+  color: tomato;
+}
+
+.singlePostInfo {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #b39656;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.singlePostCat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.singlePostTitleCat {
+  font-weight: 700;
+  font-family: 'Varela Round', sans-serif;
+  margin: 10px;
+  padding: 5px;
+  text-align: left;
+}
+
+.singlePostCatList {
+  list-style: none;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.singlePostCatListItem {
+  display: inline-block;
+  /* width: 20%; */
+  margin-top: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.singlePostSelectCat {
+  color: black;
+  background-color: lightgray;
+  margin-left: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.singlePostDesc {
+  color: #333;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.singlePostDesc::first-letter {
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.singlePostDescInput {
+  margin: 10px;
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid lightgrey;
+}
+
+.singlePostDescInput:focus {
+  outline: none;
+}
+
+.singlePostButton {
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  border: none;
+  width: 120px;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: teal;
+  align-self: flex-end;
+  margin-top: 20px;
+}
+
+.catSelectata {
+  color: white;
+  background-color: teal;
+}
