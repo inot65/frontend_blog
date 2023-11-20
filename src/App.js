@@ -11,8 +11,6 @@ import {Context} from './context/Context';
 import About from './components/pages/about/About';
 import Contact from './components/pages/contact/Contact';
 
-import 'react-toastify/dist/ReactToastify.css';
-
 function App() {
   const {user} = useContext(Context);
 
