@@ -39,7 +39,7 @@ const SinglePost = () => {
   useEffect(() => {
     const fetchCategories = async () => {
       const res = await axios.get(
-        process.env.REACT_APP_API_URL + '/categories'
+        `${process.env.REACT_APP_API_URL}/categories`
       );
       setAllCategories(res.data);
     };

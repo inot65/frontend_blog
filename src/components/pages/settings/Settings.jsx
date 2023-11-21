@@ -67,7 +67,7 @@ export default function Settings() {
 
     try {
       const res = await axios.put(
-        process.env.REACT_APP_API_URL + '/users/' + user._id,
+        `${process.env.REACT_APP_API_URL}/users/${user._id}`,
         updatedUser
       );
       setSuccess(true);
