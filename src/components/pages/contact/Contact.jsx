@@ -14,10 +14,10 @@ export default function Contact() {
 
     emailjs
       .sendForm(
-        process.env.REACT_APP_CONTACT_SERVICE,
-        process.env.REACT_APP_CONTACT_TEMPLATE,
+        `${process.env.REACT_APP_CONTACT_SERVICE}`,
+        `${process.env.REACT_APP_CONTACT_TEMPLATE}`,
         formRef.current,
-        process.env.REACT_APP_CONTACT_API_KEY
+        `${process.env.REACT_APP_CONTACT_API_KEY}`
       )
       .then(
         (result) => {
@@ -45,7 +45,7 @@ export default function Contact() {
                 id='firstName'
                 required={true}
                 autoFocus={true}
-                placeholder='John Clarke'
+                placeholder='Ion'
               />
             </div>
             <div className='contactGrupInput'>
