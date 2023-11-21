@@ -27,7 +27,15 @@ export default function Home() {
     <>
       <Header />
       <div className='home'>
-        <Posts posts={posts} />
+        {posts.length === 0 ? (
+          <div className='homePosts'>
+            <h2 className='homeNoPosts'>
+              Nu sunt postari de tipul dorit de dvs.
+            </h2>
+          </div>
+        ) : (
+          <Posts posts={posts} />
+        )}
         <Sidebar />
       </div>
     </>

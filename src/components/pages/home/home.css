@@ -1,3 +1,18 @@
 .home {
   display: flex;
 }
+
+.homePosts {
+  flex: 9;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.homeNoPosts {
+  align-self: center;
+  margin: auto;
+  color: red;
+  font-weight: 600;
+  margin-top: 20px;
+}
