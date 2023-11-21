@@ -43,7 +43,7 @@ function Write() {
       filename = file.name;
       data.append('name', filename);
       data.append('file', file);
-      data.append('api_key', process.env.REACT_APP_API_KEY);
+      data.append('api_key', `${process.env.REACT_APP_API_KEY}`);
       data.append('upload_preset', 'upload');
 
       try {
@@ -67,7 +67,7 @@ function Write() {
 
     try {
       const res = await axios.post(
-        process.env.REACT_APP_API_URL + '/posts',
+        `${process.env.REACT_APP_API_URL}/posts`,
         newPost
       );
       // console.log(
