@@ -14,11 +14,14 @@ const Register = () => {
 
     try {
       setError(false);
-      const res = await axios.post('/auth/register', {
-        username,
-        email,
-        password,
-      });
+      const res = await axios.post(
+        process.env.REACT_APP_API_URL + '/auth/register',
+        {
+          username,
+          email,
+          password,
+        }
+      );
       // redirectionare dupa succes la inregistrare user
       res.data && window.location.replace('/');
     } catch (error) {

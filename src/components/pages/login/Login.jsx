@@ -18,10 +18,13 @@ const Login = () => {
     dispatch({type: 'LOGIN_START'});
     try {
       setError(false);
-      const res = await axios.post('/auth/login', {
-        username: userRef.current.value,
-        password: passwordRef.current.value,
-      });
+      const res = await axios.post(
+        process.env.REACT_APP_API_URL + '/auth/login',
+        {
+          username: userRef.current.value,
+          password: passwordRef.current.value,
+        }
+      );
       // actualizez contextul
       dispatch({type: 'LOGIN_SUCCESS', payload: res.data});
       setError(true);

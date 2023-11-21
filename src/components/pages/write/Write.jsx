@@ -16,7 +16,9 @@ function Write() {
 
   useEffect(() => {
     const fetchCategories = async () => {
-      const res = await axios.get('/categories');
+      const res = await axios.get(
+        process.env.REACT_APP_API_URL + '/categories'
+      );
       setAllCategories(res.data);
     };
     fetchCategories();
@@ -64,7 +66,10 @@ function Write() {
     }
 
     try {
-      const res = await axios.post('/posts', newPost);
+      const res = await axios.post(
+        process.env.REACT_APP_API_URL + '/posts',
+        newPost
+      );
       // console.log(
       //   ' Redirectionare catre noul post: ',
       //   `/posts/${res.data._id}`

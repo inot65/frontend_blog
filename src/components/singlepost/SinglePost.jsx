@@ -24,7 +24,9 @@ const SinglePost = () => {
 
   useEffect(() => {
     const getPost = async () => {
-      const res = await axios.get(`/posts/${postId}`);
+      const res = await axios.get(
+        `${process.env.REACT_APP_API_URL}/posts/${postId}`
+      );
       setPost(res.data);
       setTitle(res.data.title);
       setDesc(res.data.desc);
@@ -36,7 +38,9 @@ const SinglePost = () => {
 
   useEffect(() => {
     const fetchCategories = async () => {
-      const res = await axios.get('/categories');
+      const res = await axios.get(
+        process.env.REACT_APP_API_URL + '/categories'
+      );
       setAllCategories(res.data);
     };
     fetchCategories();
@@ -45,7 +49,7 @@ const SinglePost = () => {
   // handler pentru stergere post
   const handleDelete = async () => {
     try {
-      await axios.delete(`/posts/${post._id}`, {
+      await axios.delete(`${process.env.REACT_APP_API_URL}/posts/${post._id}`, {
         data: {username: user.username},
       });
 
@@ -95,7 +99,7 @@ const SinglePost = () => {
       }
     }
     try {
-      await axios.put(`/posts/${post._id}`, {
+      await axios.put(`${process.env.REACT_APP_API_URL}/posts/${post._id}`, {
         username: user.username,
         title,
         desc,
